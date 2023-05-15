@@ -38,10 +38,11 @@ public class Main {
 		}
 
 		// Busca uma pessoa pelo seu id
-		Pessoa pessoaEncontrada = principal.obterPorId(7);
+		Pessoa pessoaEncontrada = principal.obterPorId(2);
 
-		// Atualiza o nome da pessoa encontrada
+		// Atualiza o nome e email da pessoa encontrada
 		pessoaEncontrada.setNome("Maria");
+		pessoaEncontrada.setEmail("maria@mail.com");
 
 		// Atualiza a pessoa no banco de dados
 		principal.atualizar(pessoaEncontrada);
